@@ -1,0 +1,96 @@
+.sidebar {
+    padding: 20px;
+    background-color: #151419;
+    &__head {
+        display: flex;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+        &__logo {
+            margin-right: 10px;
+        }
+        &__content {
+            font-size: 13px;
+        }
+    }
+
+    &__body {
+        margin-top: 50px;
+        .sidebar-list {
+            list-style-type: none;
+            .sidebar-item {
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-radius: 100px;
+                cursor: pointer;
+                transition: all 0.3s linear;
+                img {
+                    width: 20px;
+                }
+                p {
+                    margin-left: 10px;
+                    color: white;
+                    min-width: 80px;
+                }
+                &:hover {
+                    background-color: #1a1c23;
+                    box-shadow:
+                        0 0 5px #0aeff7,
+                        0 0 25px #0aeff7,
+                        0 0 50px #0aeff7,
+                        0 0 100px #0aeff7;
+                }
+            }
+            .sidebar-item + .sidebar-item {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &__foot {
+        margin-top: 50px;
+        text-align: center;
+        background-color: #1a1c23;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+        &__infor {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 80px;
+                border-radius: 100px;
+                display: block;
+            }
+
+            h1 {
+                margin: 10px 0;
+            }
+            p {
+            }
+        }
+        &__singout {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #634bff;
+            border-radius: 100px;
+            cursor: pointer;
+            img {
+                width: 20px;
+            }
+            p {
+                margin-left: 10px;
+                font-weight: bold;
+                color: white;
+                font-size: 15px;
+            }
+        }
+    }
+}
